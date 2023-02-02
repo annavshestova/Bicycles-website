@@ -3,10 +3,11 @@ body {
   background-blend-mode: screen;
 }
 
-#div1 > p {
+#discount-message > p {
   color: white;
   text-align: center;
-  border-bottom: 2px solid black;
+  border-bottom: 10px solid black;
+  padding: 0.4%;
   background-color: black;
 }
 
@@ -120,7 +121,7 @@ body {
 .icons {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #284C13;
   align-items: center;
   display: flex;
   padding-right: 1em;
@@ -128,6 +129,10 @@ body {
 
 .icons > i {
   padding-right: 0.2em;
+}
+.material-icons:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .picture-class {
@@ -332,3 +337,10 @@ h4 {
   margin-top: 1em;
   color: rgba(201, 195, 195, 0.724);
 }
+
+.link-hover:hover {
+  opacity: 0.5;
+  overflow: hidden;
+  cursor: pointer;
+}
+
