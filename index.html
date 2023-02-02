@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bicyclear</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+  <header>
+    <div id="div1">
+      <p class="webtext active">
+        Free standart sheeping on orders of $49 and more
+      </p>
+    </div>
+
+    <div class="search-menu">
+      <div class="logo">
+        <img src="./Assets/Logogreen.svg" />
+      </div>
+      <div class="search-bar">
+        <input id="search" type="text" placeholder="&#128270; Search" />
+      </div>
+
+      <div class="icons">
+        <i class="material-icons">account_circle</i>
+        <i class="material-icons">shopping_cart</i>
+        <i class="material-icons">favorite</i>
+      </div>
+    </div>
+
+    <nav>
+      <div class="navbar">
+        <a href="#Sale">Sale</a>
+        <a href="#Bicycles">Bicycles</a>
+        <a href="#Parts">Parts</a>
+        <a href="#Accessories">Accessories</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">
+            Clothing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="clothingDD">
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <a href="#">Clearance</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="PictureClass">
+    <img src="./Assets/GreenRipBicycle.png" class="mainpicture" />
+
+    <ul class="horizontal-scroll-wrappersquares">
+      <li>
+        <div class="boxmodel" id="boxmodel1">
+          <h3>Clearance</h3>
+        </div>
+      </li>
+      <li>
+        <div class="boxmodel" id="boxmodel2">
+          <h4>starting at $25</h4>
+          <img src="./Assets/T-shirt.png" height="100px" width="100px" class="shirt" />
+        </div>
+      </li>
+      <li>
+        <div class="boxmodel" id="boxmodel2">
+          <h4>shop now</h4>
+          <img src="./Assets/Bikeshoe.png" height="110px" width="120px" class="shoe" />
+        </div>
+      </li>
+      <li>
+        <div class="boxmodel" id="boxmodel2">
+          <h4>starting at $10</h4>
+          <img src="./Assets/Light.png" height="110px" width="120px" class="light" />
+        </div>
+      </li>
+      <li>
+        <div class="boxmodel" id="boxmodel2">
+          <h4>halmets & glasses clearance</h4>
+          <img src="./Assets/Helmets.png" height="110px" width="130px" class="helmglasses" />
+        </div>
+      </li>
+      <li>
+        <div class="boxmodel" id="boxmodel2">
+          <h4>bike accessories at $5</h4>
+          <img src="./Assets/Accessories.png" height="110px" width="130px" class="accessories" />
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="logo2">
+      <img src="./Assets/Logoblack.png">
+    </div>
+    <div class="flex-container"></div>
+    <div class="footer-content">
+      <dd>
+        <h3>About</h3>
+      </dd>
+      <dd class="footerlist">Our Story</dd>
+      <dd class="footerlist">Careers</dd>
+      <dd class="footerlist">Feedback</dd>
+    </div>
+    <div>
+      <dd><h3>Contact Us</h3></dd>
+      <dd class="footerlist">Store Location</dd>
+    </div>
+    <div>
+      <dd>
+        <h3>Help</h3>
+      </dd>
+      <dd class="footerlist">Delivery</dd>
+      <dd class="footerlist">FAQ</dd>
+    </div>
+    <div>
+      <dd>
+        <h3>Subscription</h3>
+      </dd>
+    </div>
+    <div class="flex-container"></div>
+
+    <div>
+      <dd class="socialmedia">
+        <h3>Follow Us</h3>
+      </dd>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+  </div>
+  
+  <div class="footer-bottom">
+    &copy; 2023, Bicyclear | Orderly Cycling | Designed by Anna Shestova
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  function myFunction() {
+    document.getElementById("clothingDD").classList.toggle("show");
+  }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (e) {
+    if (!e.target.matches(".dropbtn")) {
+      var myDropdown = document.getElementById("clothingDD");
+      if (myDropdown.classList.contains("show")) {
+        myDropdown.classList.remove("show");
+      }
+    }
+  };
+</script>
